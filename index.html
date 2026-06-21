@@ -1182,30 +1182,64 @@ footer .heart{ color: var(--teal); }
       </div>
     </div>
 
-    <!-- Contact form — static HTML only, no backend/JS wired up -->
-    <form class="contact-form" action="#" method="POST">
-      <div class="form-row">
-        <div class="field">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-        </div>
-      </div>
-      <div class="field">
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" placeholder="What's this about?">
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about the opportunity or idea..." required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
+<form class="contact-form" action="https://formsubmit.co/sharanukswamy@gmail.com" method="POST">
+
+  <!-- FormSubmit Settings -->
+  <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://ksharan09.github.io/mynewportfolio/">
+
+  <div class="form-row">
+    <div class="field">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name"
+        required
+      >
+    </div>
+
+    <div class="field">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+      >
+    </div>
   </div>
-</section>
+
+  <div class="field">
+    <label for="subject">Subject</label>
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      placeholder="What's this about?"
+      required
+    >
+  </div>
+
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="5"
+      placeholder="Tell me a bit about the opportunity or idea..."
+      required
+    ></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    Send Message
+  </button>
+</form>
 
 <!-- ============================================
      FOOTER
